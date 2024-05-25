@@ -14,20 +14,20 @@
    <children>
       <ImageView fitHeight="750.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../image/Fondo%20MenuProductos.png" />
+            <Image url="@../image/MenuProductos.png" />
          </image>
       </ImageView>
-      <TextField fx:id="tfProductoId" editable="false" layoutX="74.0" layoutY="200.0" prefHeight="33.0" prefWidth="171.0" promptText="Producto Id" />
-      <TextField fx:id="tfNombre" layoutX="74.0" layoutY="273.0" prefHeight="34.0" prefWidth="223.0" promptText="Ingrese el nombre del Producto" />
-      <TextArea fx:id="taDescripcion" layoutX="74.0" layoutY="346.0" prefHeight="68.0" prefWidth="285.0" promptText="Ingrese la descripcion" wrapText="true" />
-      <TextField fx:id="tfCantidadStock" layoutX="74.0" layoutY="460.0" prefHeight="34.0" prefWidth="223.0" promptText="Ingrese la cantidad de stock" />
-      <TextField fx:id="tfPrecioVentaU" layoutX="74.0" layoutY="530.0" prefHeight="34.0" prefWidth="223.0" promptText="Ingrese el precio de venta unitario" />
-      <TextField fx:id="tfPrecioVentaM" layoutX="74.0" layoutY="604.0" prefHeight="34.0" prefWidth="223.0" promptText="Ingrese el precio de venta mayor" />
-      <TextField fx:id="tfPrecioCompra" layoutX="74.0" layoutY="674.0" prefHeight="34.0" prefWidth="223.0" promptText="Ingrese el precio de la compra" />
-      <Button fx:id="btnRegresar" layoutX="7.0" layoutY="718.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Regresar" />
-      <ComboBox fx:id="cmbDistribuidor" layoutX="567.0" layoutY="204.0" prefHeight="34.0" prefWidth="183.0" />
-      <ComboBox fx:id="cmbCategoriaProducto" layoutX="813.0" layoutY="204.0" prefHeight="34.0" prefWidth="286.0" />
-      <TableView fx:id="tblProductos" layoutX="392.0" layoutY="261.0" onMouseClicked="#cargarForm" prefHeight="431.0" prefWidth="665.0">
+      <TextField fx:id="tfProductoId" editable="false" layoutX="22.0" layoutY="204.0" prefHeight="33.0" prefWidth="171.0" promptText="Producto Id" />
+      <TextField fx:id="tfNombre" layoutX="22.0" layoutY="279.0" prefHeight="34.0" prefWidth="223.0" promptText="Ingrese el nombre del Producto" />
+      <TextArea fx:id="taDescripcion" layoutX="22.0" layoutY="349.0" prefHeight="51.0" prefWidth="270.0" promptText="Ingrese la descripcion" wrapText="true" />
+      <TextField fx:id="tfCantidadStock" layoutX="22.0" layoutY="435.0" prefHeight="34.0" prefWidth="223.0" promptText="Ingrese la cantidad de stock" />
+      <TextField fx:id="tfPrecioVentaU" layoutX="22.0" layoutY="504.0" prefHeight="34.0" prefWidth="223.0" promptText="Ingrese el precio de venta unitario" />
+      <TextField fx:id="tfPrecioVentaM" layoutX="22.0" layoutY="570.0" prefHeight="34.0" prefWidth="223.0" promptText="Ingrese el precio de venta mayor" />
+      <TextField fx:id="tfPrecioCompra" layoutX="28.0" layoutY="642.0" prefHeight="34.0" prefWidth="223.0" promptText="Ingrese el precio de la compra" />
+      <Button fx:id="btnRegresar" layoutX="277.0" layoutY="178.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="51.0" prefWidth="98.0" text="Regresar" />
+      <ComboBox fx:id="cmbDistribuidor" layoutX="425.0" layoutY="204.0" prefHeight="34.0" prefWidth="183.0" />
+      <ComboBox fx:id="cmbCategoriaProducto" layoutX="672.0" layoutY="204.0" prefHeight="34.0" prefWidth="286.0" />
+      <TableView fx:id="tblProductos" layoutX="392.0" layoutY="261.0" onMouseClicked="#cargarForm" prefHeight="405.0" prefWidth="663.0">
         <columns>
           <TableColumn fx:id="colProductoId" prefWidth="44.800048828125" text="productoId" />
           <TableColumn fx:id="colNombre" prefWidth="79.99993896484375" text="nombre" />
@@ -40,10 +40,10 @@
             <TableColumn fx:id="colCategoria" prefWidth="71.0" text="categoriaProducto" />
         </columns>
       </TableView>
-      <Button fx:id="btnEliminar" alignment="CENTER" layoutX="383.0" layoutY="705.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="17.0" prefWidth="62.0" text="Eliminar" wrapText="true" />
-      <TextField fx:id="tfProductoBuscarId" layoutX="725.0" layoutY="704.0" prefHeight="26.0" prefWidth="264.0" promptText="Ingrese el Id del producto a buscar" />
-      <Button fx:id="btnBuscar" layoutX="995.0" layoutY="704.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Buscar" />
-      <Button fx:id="btnGuardar" layoutX="1080.0" layoutY="285.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="43.0" prefWidth="97.0" text="Guardar" />
-      <Button fx:id="btnVaciar" alignment="CENTER" layoutX="1080.0" layoutY="363.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="43.0" prefWidth="97.0" text="Vaciar" wrapText="true" />
+      <Button fx:id="btnEliminar" alignment="CENTER" layoutX="1080.0" layoutY="362.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="58.0" prefWidth="98.0" text="Eliminar" wrapText="true" />
+      <TextField fx:id="tfProductoBuscarId" layoutX="517.0" layoutY="105.0" prefHeight="26.0" prefWidth="270.0" promptText="Ingrese el Id del producto a buscar" />
+      <Button fx:id="btnBuscar" layoutX="803.0" layoutY="101.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="34.0" prefWidth="85.0" text="Buscar" />
+      <Button fx:id="btnGuardar" layoutX="1080.0" layoutY="285.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="57.0" prefWidth="98.0" text="Guardar" />
+      <Button fx:id="btnVaciar" alignment="CENTER" layoutX="1080.0" layoutY="452.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="58.0" prefWidth="98.0" text="Vaciar" wrapText="true" />
    </children>
 </AnchorPane>
