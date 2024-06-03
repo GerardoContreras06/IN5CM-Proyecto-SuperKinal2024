@@ -717,3 +717,35 @@ begin
 			where productoId = proId;
 end $$
 Delimiter ;
+
+delimiter $$
+create procedure sp_agregarUsuario(us varchar(30), con varchar(100), nivAccId int, empId int)
+begin
+	insert into Usuarios(usuario, contrasenia, nivelAccesoId, empleadoId) values 
+		(us, con, nivAccId, empId);
+end $$
+delimiter ;
+
+call sp_agregarUsuario('jcortez', '1234', 1, 1);
+
+delimiter $$
+create procedure sp_buscarUsuario(us varchar(30))
+begin 
+	select * from Usuarios
+		where usuario = us;
+end $$
+delimiter ;
+
+drop procedure sp_buscarUsuario;
+
+
+delimiter $$
+create procedure sp_listarNivelAcceso()
+begin
+	select * from nivelesAcceso;
+end $$
+delimiter ;
+
+call sp_listarNivelAcceso();
+
+select * from usuarios;

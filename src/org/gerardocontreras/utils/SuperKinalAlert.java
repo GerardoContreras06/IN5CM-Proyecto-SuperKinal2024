@@ -38,6 +38,18 @@ public class SuperKinalAlert {
             alert.setHeaderText("Campos Pendientes");
             alert.setContentText("Llena los campos necesarios!!");
             alert.showAndWait();
+        }else if(code == 602){
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setTitle("Usuario incorrecto");
+            alert.setHeaderText("Usuario incorrecto");
+            alert.setContentText("Verifique el usuario");
+            alert.showAndWait();
+        }else if(code == 005){
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setTitle("Contraseña incorrecta");
+            alert.setHeaderText("Contraseña Incorrecta");
+            alert.setContentText("Verifique la contraseña");
+            alert.showAndWait();
         }
     }
     
