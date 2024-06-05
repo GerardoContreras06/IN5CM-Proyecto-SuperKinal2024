@@ -12,7 +12,9 @@ import org.gerardocontreras.controller.FormCargoController;
 import org.gerardocontreras.controller.FormCategoriaProductoController;
 import org.gerardocontreras.controller.FormClienteController;
 import org.gerardocontreras.controller.FormCompraController;
+import org.gerardocontreras.controller.FormDetalleFacturaController;
 import org.gerardocontreras.controller.FormDistribuidorController;
+import org.gerardocontreras.controller.FormFacturaController;
 import org.gerardocontreras.controller.FormUsuarioController;
 import org.gerardocontreras.controller.LoginController;
 import org.gerardocontreras.controller.MenuCargoController;
@@ -200,6 +202,16 @@ public class Main extends Application {
         try{
             MenuFacturaController menuFacturaView = (MenuFacturaController)switchScene("MenuFacturaView.fxml", 1200, 750);
             menuFacturaView.setStage(this);
+        }catch(Exception e){
+            System.out.println(e.getMessage());
+        }
+    }
+    
+     public void formDetalleFacturaView(int op){
+        try{
+            FormDetalleFacturaController formDetalleFacturaView = (FormDetalleFacturaController)switchScene("FormDetalleFacturaView.fxml", 500, 750);
+            formDetalleFacturaView.setOp(op);
+            formDetalleFacturaView.setStage(this);
         }catch(Exception e){
             System.out.println(e.getMessage());
         }
