@@ -91,6 +91,16 @@ public class Main extends Application {
         }
     }
     
+    public void formFacturaView(int op){
+        try{
+            FormFacturaController formFacturaView = (FormFacturaController)switchScene("FormFacturaView.fxml", 500, 750);
+            formFacturaView.setOp(op);
+            formFacturaView.setStage(this);
+        }catch(Exception e){
+            System.out.println(e.getMessage());
+        }
+    }
+    
     public void menuTicketSoporteView(){
         try{
             MenuTicketSoporteController menuTicketSoporteView = (MenuTicketSoporteController)switchScene("MenuTicketSoporteView.fxml", 1200, 750);
